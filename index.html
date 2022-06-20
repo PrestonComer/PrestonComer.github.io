@@ -6,7 +6,20 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         
+        <!-- CSS Imports -->
+        <link rel="stylesheet" href="css/preload.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/accordion.css" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#workAccordion" ).accordion({
+                collapsible: true
+            });
+        } );
+        </script>
     </head>
     <body class="is-preload">
 
@@ -41,50 +54,36 @@
                 <!-- Work -->
                 <article id="work">
                     <h2 class="major">Work</h2>
-                    <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-
-                    <button class="accordion">Information Technology Services Student Intern</button>
-                        <div class="panel">
-                            I took this position initially as a winter internship during school break. However 
-                            as the time for it to end came near they offered to have it extend until I graduated in 2022. 
-                            This position was primarily to introduce me to an actual work environment as well as 
-                            the technologies, techniques, and time management skill to work both in the office and
-                            as a remote worker.
-
-                            I worked by myself with daily meetings with my boss to go over what progress I had made 
-                            and my thoughts on what I would work on that day and how I would approach it. I also 
-                            had both weekly and biweekly meetings with other teams to schedule upcoming projects 
-                            that we believed could be done in 2 weeks as well as report how we were doing on our projects 
-                            which were managed using a website called Asana.
-
-                            Most of my projects were creating forms for mainly faculty to submit to request funding from 
-                            the school or to fix bugs that had appeared on other forms and were reported to our department. 
-                            Storing the information collected in the forms was primarily done through SQL while the forms 
-                            themselves were created using CFML, JavaScript, HTML, and CSS.
-
-                            A significant project that I did in this position would be the complete reconstruction of the 
-                            Hamilton College Dining Menu section of their college application available through the 
-                            apple and android app store. Using AJAX I did a POST call to Bon Appetit's API that returned 
-                            an enourmos JSON object that I verified and stored using SQL. I then would parse that data 
-                            and display menus for multiple dining halls each with multiple meal times in both mobile and 
-                            desktop friendly layouts as well as providing a way for people to look at prior and future menus.
-                            
-                            Apple: <a href="https://apps.apple.com/us/app/hamilton-college-mobile-app/id1028206620" alt="Apple Store Hamilton College App Link" 
-                            target="_blank" rel="noopener noreferrer"></a>
-                            Android: <a href="https://play.google.com/store/apps/details?id=edu.hamilton.hamiltonapp&hl=en_US&gl=US" alt="Android Store Hamilton College App Link"
-                            target="_blank" rel="noopener noreferrer"></a>
-                        </div>
-
-                        <button class="accordion">Section 2</button>
-                        <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-
-                        <button class="accordion">Section 3</button>
-                        <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    <p>Currently Under Development.</p>
+                    <!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
+                    <span class="image main"><img src="https://fr8wff00-a.akamaihd.net/philippines/wp-content/uploads/2021/05/Work-From-Home-Jobs-5.png"/></span>
+                    <details id="jobOne">
+                        <summary>Information Technology Services Student Intern</summary><br>
+                        &emsp;I took this position initially as a winter internship during school break. However 
+                        as the time for it to end came near they offered to have it extend until I graduated in 2022. 
+                        This position was primarily to introduce me to an actual work environment as well as 
+                        the technologies, techniques, and time management skill to work both in the office and
+                        as a remote worker.<br>
+                        &emsp;I worked by myself with daily meetings with my boss to go over what progress I had made 
+                        and my thoughts on what I would work on that day and how I would approach it. I also 
+                        had both weekly and bi-weekly meetings with other teams to schedule upcoming projects 
+                        that we believed could be done in 2 weeks as well as report how we were doing on our projects 
+                        which were managed using a website called Asana.<br>
+                        &emsp;Most of my projects were creating forms for mainly faculty to submit to request funding from 
+                        the school or to fix bugs that had appeared on other forms and were reported to our department. 
+                        Storing the information collected in the forms was primarily done through SQL while the forms 
+                        themselves were created using CFML, JavaScript, HTML, and CSS.<br>
+                        &emsp;A significant project that I did in this position would be the complete reconstruction of the 
+                        Hamilton College Dining Menu section of their college application available through the 
+                        apple and android app store. Using AJAX I did a POST call to Bon Appetit's API that returned 
+                        an enormous JSON object that I verified and stored using SQL. I then would parse that data 
+                        and display menus for multiple dining halls each with multiple meal times in both mobile and 
+                        desktop friendly layouts as well as providing a way for people to look at prior and future menus.<br><br>
+                        
+                        <a href="https://apps.apple.com/us/app/hamilton-college-mobile-app/id1028206620" alt="Apple Store Hamilton College App Link" 
+                        target="_blank" rel="noopener noreferrer">Apple Store</a><br>
+                        <a href="https://play.google.com/store/apps/details?id=edu.hamilton.hamiltonapp&hl=en_US&gl=US" alt="Android Store Hamilton College App Link"
+                        target="_blank" rel="noopener noreferrer">Android Store</a>
+                        </details>
                 </article>
 
                 <!-- About -->
@@ -130,15 +129,17 @@
         </div>
 
     <!-- BG -->
-        <div id="bg"></div>
+    <div id="bg"></div>
 
     <!-- Scripts -->
-        <!-- <script src="js/jquery.min.js"></script> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="js/browser.min.js"></script>
-        <script src="js/breakpoints.min.js"></script>
-        <script src="js/util.js"></script>
-        <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/accordion.js"></script>
 
     </body>
 </html>
