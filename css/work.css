@@ -1,8 +1,8 @@
 /* This file is to contain the CSS related to the work section of index.html */
 
-/* article#work {
-    padding-bottom: ;
-} */
+article#work details {
+    margin-bottom: 10px;
+}
 
 article#work hr {
     margin: 0%;
