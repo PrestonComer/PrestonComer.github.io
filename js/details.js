@@ -1,9 +1,14 @@
-// When a detail is clicked on top open it close all other details that are open so that only
-// a single detail is open at one time. Requires each detail to have its own id.
-$("details").on("click", function(clickedElement) {
-    $("details").each(function(element) {
-        if (clickedElement.id !== $("details")[element].id) {
-            $("details")[element].removeAttribute("open");
+// When a detail is clicked it closes all other open details.
+$("details").on("click", toggleDetails);
+
+function toggleDetails() {
+    // get the detail that was clicked on
+    clickedDetail = this;
+    // go through all details
+    $("details").each(function() {
+        // if the detail is not the one clicked and open then close it
+        if (this != clickedDetail & this.hasAttribute("open")) {
+                this.removeAttribute("open");
         }
-    });
-})
+    })
+}
