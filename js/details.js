@@ -1,7 +1,5 @@
 // When a detail is clicked it closes all other open details.
-$("details").on("click", toggleDetails);
-
-function toggleDetails() {
+$("details").on("click", function() {
     // get the detail that was clicked on
     clickedDetail = this;
     // go through all details
@@ -11,4 +9,4 @@ function toggleDetails() {
                 this.removeAttribute("open");
         }
     })
-}
+})
