@@ -1,0 +1,10 @@
+/* This file is to contain the CSS related to the work section of index.html */
+
+article#projects details {
+    margin-bottom: 10px;
+}
+
+article#projects hr {
+    margin: 0%;
+    margin-bottom: 10px;
+}

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/preload.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/work.css" />
+        <link rel="stylesheet" href="css/projects.css" />
 
     </head>
     <body class="is-preload">
@@ -29,18 +30,48 @@
                     </div>
                 </div>
 
+                <!-- Navigation Buttons -->
                 <div class="use-middle button-group">
+                    <!-- Resume -->
                     <a href="Resume.pdf" target="_blank" 
                         rel="noopener noreferrer" download><button class="left" 
                         onclick="window.location.href = '#resume';">Resume</button></a>
+                    <!-- Projects -->
+                    <button onclick="window.location.href = '#projects';">Projects</button>
+                    <!-- Work -->
                     <button onclick="window.location.href = '#work';">Work</button>
+                    <!-- About -->
                     <button onclick="window.location.href = '#about';">About</button>
+                    <!-- Contact -->
                     <button class="right" onclick="window.location.href = '#contact';">Contact</button>
                 </div>
             </header>
 
             <!-- Main -->
             <div id="main">
+
+                <!-- Projects -->
+                <article id="projects">
+                    <h2 class="major">Projects</h2>
+                    <h4 class="projectsHeader">JavaScript</h4>
+                    <details>
+                        <summary>Calculator - 
+                            <a href="https://github.com/PrestonComer/calculator-js" alt="Missing Repository Link" 
+                                target="_blank" rel="noopener noreferrer">Repository Link</a>
+                        </summary>
+                        <hr>
+                        <embed type="text/html" src="../calculator/index.html"  width="500" height="200">
+                    </details>
+
+                    <details>
+                        <summary>Hangman - 
+                            <a href="https://github.com/PrestonComer/hangman-js" alt="Missing Github Link" 
+                                target="_blank" rel="noopener noreferrer">Repository Link</a>
+                        </summary>
+                        <hr>
+                        <embed type="text/html" src="../hangman-js/index.html" width="500" height="500">
+                    </details>
+                </article>
 
                 <!-- Work -->
                 <article id="work">
@@ -72,9 +103,9 @@
                         desktop friendly layouts as well as providing a way for people to look at prior and future menus.<br><br>
                         
                         <a href="https://apps.apple.com/us/app/hamilton-college-mobile-app/id1028206620" alt="Apple Store Hamilton College App Link" 
-                        target="_blank" rel="noopener noreferrer">Apple Store</a><br>
+                            target="_blank" rel="noopener noreferrer">Apple Store</a><br>
                         <a href="https://play.google.com/store/apps/details?id=edu.hamilton.hamiltonapp&hl=en_US&gl=US" alt="Android Store Hamilton College App Link"
-                        target="_blank" rel="noopener noreferrer">Android Store</a>
+                            target="_blank" rel="noopener noreferrer">Android Store</a>
                         <hr>
                     </details>
                     <details id="jobTwo">
