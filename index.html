@@ -37,7 +37,7 @@
                         rel="noopener noreferrer" download><button class="left" 
                         onclick="window.location.href = '#resume';">Resume</button></a>
                     <!-- Projects -->
-                    <button onclick="window.location.href = '#projects';">Projects</button>
+                    <!-- <button onclick="window.location.href = '#projects';">Projects</button> -->
                     <!-- Work -->
                     <button onclick="window.location.href = '#work';">Work</button>
                     <!-- About -->
@@ -54,22 +54,26 @@
                 <article id="projects">
                     <h2 class="major">Projects</h2>
                     <h4 class="projectsHeader">JavaScript</h4>
-                    <details>
+                    <details id="calculator">
                         <summary>Calculator - 
                             <a href="https://github.com/PrestonComer/calculator-js" alt="Missing Repository Link" 
                                 target="_blank" rel="noopener noreferrer">Repository Link</a>
                         </summary>
                         <hr>
-                        <iframe src="https://PrestonComer.github.io/calculator-js"></iframe>
+                        <div class="container">
+                            <iframe class="iframeWindow" src="https://PrestonComer.github.io/calculator-js"></iframe>
+                        </div>
                     </details>
 
-                    <details>
+                    <details id="hangman">
                         <summary>Hangman - 
                             <a href="https://github.com/PrestonComer/hangman-js" alt="Missing Github Link" 
                                 target="_blank" rel="noopener noreferrer">Repository Link</a>
                         </summary>
                         <hr>
-                        <iframe src="https://PrestonComer.github.io/hangman-js"></iframe>
+                        <div class="container">
+                            <iframe class="iframeWindow" src="https://PrestonComer.github.io/hangman-js"></iframe>
+                        </div>
                     </details>
                 </article>
 
@@ -204,6 +208,7 @@
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
     <script src="js/details.js"></script>
+    <script src="js/projects.js"></script>
 
     </body>
 </html>
