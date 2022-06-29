@@ -1,4 +1,4 @@
-/* This file is to contain the CSS related to the work section of index.html */
+/* This file is to contain the CSS related to the projects section of index.html */
 
 article#projects details {
     margin-bottom: 10px;
@@ -8,22 +8,12 @@ article#projects hr {
     margin: 0%;
     margin-bottom: 10px;
 }
+ 
+iframe#calculatorProject.iframeWindow {
+    width: 100%;
+    height: 165px;
+}
 
-
-
-
-
-
-.container {
-    /* position: relative; */
-     width: 100%;
-     height: 0;
-     padding-bottom: 100%;
- }
- .iframeWindow {
-     /* position: absolute; */
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
- }
+iframe#hangmanProject.iframeWindow {
+    height: 600px;
+}
