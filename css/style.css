@@ -146,7 +146,7 @@ a {
 -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+/* border-bottom: dotted 1px rgba(255, 255, 255, 0.5); */
 text-decoration: none;
 color: inherit;
 }
@@ -1628,6 +1628,19 @@ article#resume object {
 /* When the screen is small list the pages in a different format */
 @media screen and (max-width: 540px) {
     div.use-middle.button-group {
-        display: inline-flex;
+        max-width: 100px;
+        display:grid;
+    }
+
+    .button-group button.left, .button-group button.right {
+        width: 100%;
+    }
+
+    .button-group button.left {
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .button-group button.right {
+        border-radius: 0px 0px 4px 4px;
     }
 }
