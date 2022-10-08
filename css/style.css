@@ -1645,8 +1645,6 @@ article#resume object {
     }
 }
 
-/* This contains the CSS related to the work section of index.html */
-
 article#work details {
     margin-bottom: 10px;
 }
@@ -1659,11 +1657,15 @@ article#work > h4.worksHeader {
     margin-bottom: 5px;
 }
 
-article > .jobInformation {
+article > .jobInformation,
+article > .researchInformation,
+article > ol.questionList {
     margin-bottom: 0px;
 }
 
-/* This contains the CSS related to the projects section of index.html */
+article > ol.questionList > li {
+    margin-bottom: 10px;
+}
 
 ul {
     margin: 0.75em 0;
