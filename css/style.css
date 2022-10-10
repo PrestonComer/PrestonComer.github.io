@@ -1662,6 +1662,9 @@ article > .researchInformation,
 article > ol.questionList {
     margin-bottom: 0px;
 }
+article > h2.major {
+    max-width: 100%;
+}
 
 article > ol.questionList > li {
     margin-bottom: 10px;
