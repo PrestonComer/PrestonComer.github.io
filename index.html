@@ -15,7 +15,7 @@
     </head>
     <body class="is-preload">
 
-        <!-- Wrapper -->
+        <!-- Body Content Wrapper -->
         <div id="wrapper">
 
             <!-- Header -->
@@ -29,86 +29,180 @@
                 <!-- Navigation Buttons -->
                 <div class="use-middle button-group">
                     <!-- Resume -->
-                    <a href="Resume.pdf" target="_blank" 
-                        rel="noopener noreferrer" download><button class="left" 
-                        onclick="window.location.href = '#resume';">Resume</button></a>
+                    <a href="Resume.pdf"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        download>
+                        <button
+                            class="left" 
+                            onclick="window.location.href = '#resume';">
+                            Resume
+                        </button>
+                    </a>
                     <!-- Projects -->
-                    <button onclick="window.location.href = '#projects';">Projects</button>
+                    <button
+                        onclick="window.location.href = '#projects';">
+                        Projects
+                    </button>
                     <!-- Work -->
-                    <button onclick="window.location.href = '#work';">Work</button>
+                    <button 
+                        onclick="window.location.href = '#work';">
+                        Work
+                    </button>
                     <!-- Further research -->
-                    <button onclick="window.location.href = '#research';">Research</button>
+                    <button 
+                        onclick="window.location.href = '#research';">
+                        Research
+                    </button>
                     <!-- Contact -->
-                    <button class="right" onclick="window.location.href = '#contact';">Contact</button>
+                    <button class="right" 
+                        onclick="window.location.href = '#contact';">
+                        Contact
+                    </button>
                 </div>
             </header>
 
-            <!-- Main -->
+            <!-- Main Content -->
             <div id="main">
                 
-                <!-- Projects -->
+                <!-- Table For Projects (TODO: Under Construction) -->
                 <article id="projects">
                     <h2 class="major">Projects</h2>
-                    <h4 class="projectsHeader">HTML/CSS/JS</h4>
-                    <ul>
-                        <li id="calculator">
-                            <a href="https://github.com/PrestonComer/calculator-js"
-                                alt="Missing Repository Link"
-                                target="_blank"
-                                rel="noopener noreferrer">Calculator</a>
-                        </li>
-
-                        <li id="hangman">
-                            <a href="https://github.com/PrestonComer/hangman-js"
-                                alt="Missing Github Link"
-                                target="_blank"
-                                rel="noopener noreferrer">Hangman</a>
-                        </li>
-
-                        <!-- <li id="dispensarySample">
-                            <a href="https://github.com/PrestonComer/dispensary-sample"
-                                alt="Missing Github Link"
-                                target="_blank"
-                                rel="noopener noreferrer">Dispensary Sample Website</a>
-                        </li> -->
-
-                        <li id="portfolioWebsite">
-                            <a href="https://github.com/PrestonComer/PrestonComer.github.io"
-                                alt="Missing Github Link"
-                                target="_blank"
-                                rel="noopener noreferrer">Portfolio Website</a>
-                        </li>
-                    </ul>
-
-                    <h4 class="projectsHeader">C++</h4>
-                    <ul>
-                        <li id="sudokuSolver">
-                            <a href="https://github.com/PrestonComer/sudoku-solver"
-                                alt="Missing Repository Link"
-                                target="_blank"
-                                rel="noopener noreferrer">Sudoku Solver</a>
-                        </li>
-
-                        <li id="caesarCipher">
-                            <a href="https://github.com/PrestonComer/caesar-cipher"
-                                alt="Missing Repository Link"
-                                target="_blank"
-                                rel="noopener noreferrer">Caesar Cipher</a>
-                        </li>
-                    </ul>
-
-                    <h4 class="projectsHeader">Python</h4>
-                    <ul>
-                        <li id="fightingOn">
-                            <a href="https://github.com/PrestonComer/fighting-on"
-                                alt="Missing Repository Link"
-                                target="_blank"
-                                rel="noopener noreferrer">Fighting-On</a>
-                        </li>
-                    </ul>
+                    <table style="text-align: center;">
+                        <!-- Table Header Row -->
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Python</th>
+                            <th>C++</th>
+                            <th>HTML</th>
+                            <th>CSS</th>
+                            <th>JS</th>
+                            <th>React</th>
+                        </tr>
+                        <!-- Calculator -->
+                        <tr>
+                            <td>
+                                <a href="https://github.com/PrestonComer/calculator-js"
+                                    alt="Missing Repository Link"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Calculator
+                                </a>
+                            </td>
+                            <!-- ✔ -->
+                            <td></td> <!-- Python -->
+                            <td></td> <!-- C++ -->
+                            <td>&#10004;</td> <!-- HTML -->
+                            <td>&#10004;</td> <!-- CSS -->
+                            <td>&#10004;</td> <!-- JavaScript -->
+                            <td></td> <!-- React -->
+                        </tr>
+                        <!-- Hangman -->
+                        <tr>
+                            <td>
+                                <a href="https://github.com/PrestonComer/hangman-js"
+                                    alt="Missing Github Link"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Hangman
+                                </a>
+                            </td>
+                            <td></td> <!-- Python -->
+                            <td></td> <!-- C++ -->
+                            <td>&#10004;</td> <!-- HTML -->
+                            <td>&#10004;</td> <!-- CSS -->
+                            <td>&#10004;</td> <!-- JavaScript -->
+                            <td></td> <!-- React -->
+                        </tr>
+                        <!-- Portfolio Website -->
+                        <tr>
+                            <td>
+                                <a href="https://github.com/PrestonComer/PrestonComer.github.io"
+                                    alt="Missing Github Link"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Portfolio Website
+                                </a>
+                            </td>
+                            <td></td> <!-- Python -->
+                            <td></td> <!-- C++ -->
+                            <td>&#10004;</td> <!-- HTML -->
+                            <td>&#10004;</td> <!-- CSS -->
+                            <td>&#10004;</td> <!-- JavaScript -->
+                            <td></td> <!-- React -->
+                        </tr>
+                        <!-- Sudoku Solver -->
+                        <tr>
+                            <td>
+                                <a href="https://github.com/PrestonComer/sudoku-solver"
+                                    alt="Missing Github Link"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Sudoku Solver
+                                </a>
+                            </td>
+                            <td></td> <!-- Python -->
+                            <td>&#10004;</td> <!-- C++ -->
+                            <td></td> <!-- HTML -->
+                            <td></td> <!-- CSS -->
+                            <td></td> <!-- JavaScript -->
+                            <td></td> <!-- React -->
+                        </tr>
+                        <!-- Caesar Cipher -->
+                        <tr>
+                            <td>
+                                <a href="https://github.com/PrestonComer/caesar-cipher"
+                                    alt="Missing Github Link"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Caesar Cipher
+                                </a>
+                            </td>
+                            <td></td> <!-- Python -->
+                            <td>&#10004;</td> <!-- C++ -->
+                            <td></td> <!-- HTML -->
+                            <td></td> <!-- CSS -->
+                            <td></td> <!-- JavaScript -->
+                            <td></td> <!-- React -->
+                        </tr>
+                        <!-- Fighting-On -->
+                        <tr>
+                            <td>
+                                <a href="https://github.com/PrestonComer/fighting-on"
+                                    alt="Missing Github Link"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Fighting-On
+                                </a>
+                            </td>
+                            <td>&#10004;</td> <!-- Python -->
+                            <td></td> <!-- C++ -->
+                            <td></td> <!-- HTML -->
+                            <td></td> <!-- CSS -->
+                            <td></td> <!-- JavaScript -->
+                            <td></td> <!-- React -->
+                        </tr>
+                        <!-- Clicker -->
+                        <tr>
+                            <td>
+                                <a href="https://github.com/PrestonComer/clicker-game"
+                                    alt="Missing Github Link"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Clicker Game
+                                </a>
+                            </td>
+                            <td></td> <!-- Python -->
+                            <td></td> <!-- C++ -->
+                            <td>&#10004;</td> <!-- HTML -->
+                            <td>&#10004;</td> <!-- CSS -->
+                            <td>&#10004;</td> <!-- JavaScript -->
+                            <td>&#10004;</td> <!-- React -->
+                        </tr>
+                    </table>
                 </article>
 
-                <!-- Work -->
+                <!-- Work links -->
                 <article id="work">
                     <h2 class="major">Work</h2>
                     <h4 class="worksHeader">Computer Science</h4>
@@ -143,6 +237,7 @@
                     </ul>
                 </article>
 
+                <!-- work content -->
                 <article id="hamiltonInternDescription">
                     <h2 class="major">IT Services Intern</h2>
                     <p class="jobInformation">
@@ -172,6 +267,7 @@
                     </p>
                 </article>
 
+                <!-- work content -->
                 <article id="softwareDeveloperSummerInternDescription">
                     <h2 class="major">Software Developer Intern</h2>
                     <p class="jobInformation">
@@ -195,6 +291,7 @@
                     </p>
                 </article>
 
+                <!-- work content -->
                 <article id="mcdonaldsCrewDescription">
                     <h2 class="major">Crew Member</h2>
                     <p class="jobInformation">
@@ -217,6 +314,7 @@
                     </p>
                 </article>
 
+                <!-- work content -->
                 <article id="danksBudtenderDescription">
                     <h2 class="major">Budtender</h2>
                     <p class="jobInformation">
@@ -240,7 +338,7 @@
                     </p>
                 </article>
 
-                <!-- research -->
+                <!-- research links -->
                 <article id="research">
                     <h2 class="major">Research</h2>
 
@@ -259,6 +357,7 @@
                     </ul>
                 </article>
 
+                <!-- research content -->
                 <article id="programmingPearlsProfilers10142022">
                     <h2 class="major">Programming Pearls (Profilers)</h2>
                     <p class="researchInformation">
@@ -287,6 +386,7 @@
                     </p>
                 </article>
 
+                <!-- research content -->
                 <article id="cybersecurity10082022">
                     <h2 class="major">Beginning With Cybersecurity</h2>
                     <p class="researchInformation">
@@ -330,7 +430,7 @@
                     </p>
                 </article>
 
-                <!-- Contact -->
+                <!-- Contact page -->
                 <article id="contact">
                     <h2 class="major">Contact Me</h2>
 

@@ -1693,3 +1693,9 @@ ul li::before {
 h4.projectsHeader {
     margin-bottom: 0px;
 }
+
+article#projects > table > tbody > tr > th {
+    text-align: center;
+    vertical-align: middle;
+    padding: initial;
+}
