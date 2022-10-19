@@ -65,19 +65,19 @@
             <!-- Main Content -->
             <div id="main">
                 
-                <!-- Table For Projects (TODO: Under Construction) -->
+                <!-- Projects Table -->
                 <article id="projects">
                     <h2 class="major">Projects</h2>
-                    <table style="text-align: center;">
+                    <table id="projectsTable" style="text-align: center;">
                         <!-- Table Header Row -->
                         <tr>
-                            <th>Project Name</th>
-                            <th>Python</th>
-                            <th>C++</th>
-                            <th>HTML</th>
-                            <th>CSS</th>
-                            <th>JS</th>
-                            <th>React</th>
+                            <th onclick="sortTable(0)">Project Name</th>
+                            <th onclick="sortTable(1)">Python</th>
+                            <th onclick="sortTable(2)">C++</th>
+                            <th onclick="sortTable(3)">HTML</th>
+                            <th onclick="sortTable(4)">CSS</th>
+                            <th onclick="sortTable(5)">JS</th>
+                            <th onclick="sortTable(6)">React</th>
                         </tr>
                         <!-- Calculator -->
                         <tr>
@@ -344,15 +344,15 @@
 
                     <ul>
                         <li>
-                            <a href="#cybersecurity10082022"
-                                alt=""
-                                rel="noopener noreferrer">Beginning With Cybersecurity - 08 October 2022</a>
-                        </li>
-
-                        <li>
                             <a href="#programmingPearlsProfilers10142022"
                                 alt=""
                                 rel="noopener noreferrer">Programming Pearls (Profilers) - 13 October 2022</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#cybersecurity10082022"
+                                alt=""
+                                rel="noopener noreferrer">Beginning With Cybersecurity - 08 October 2022</a>
                         </li>
                     </ul>
                 </article>
@@ -484,6 +484,10 @@
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
     <script src="js/details.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Sort The Projects Table On Start By Project Name -->
+    <script>sortTable(0)</script>
 
     </body>
 </html>

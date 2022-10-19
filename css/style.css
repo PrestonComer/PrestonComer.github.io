@@ -1698,4 +1698,21 @@ article#projects > table > tbody > tr > th {
     text-align: center;
     vertical-align: middle;
     padding: initial;
+    cursor: pointer;
+}
+
+.headerSortDown:after {
+  content: ' ';
+  position: relative;
+  left: 2px;
+  border: 8px solid transparent;
+}
+
+.headerSortDown:after {
+  top: 10px;
+  border-top-color: silver;
+}
+
+.headerSortDown {
+  padding-right: 10px;
 }
