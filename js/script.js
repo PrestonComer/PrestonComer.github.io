@@ -50,7 +50,6 @@ function sortTable(n) {
         y = rows[i + 1].getElementsByTagName("td")[n];
         /*check if the two rows should switch place,
         based on the direction, asc or desc:*/
-        
         if (n == 0) {
             if (dir == "asc") {
             if (x.innerHTML.toLowerCase() > 

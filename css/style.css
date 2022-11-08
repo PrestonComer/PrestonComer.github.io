@@ -1758,3 +1758,26 @@ div.content.collapsibleContent.quizAnswer {
 .quizQuestion {
     margin-top: 15px;
 }
+
+tr > td:first-child {
+    vertical-align: middle;
+}
+tr > td:nth-child(2) {
+    vertical-align: middle;
+}
+td > span.projectButtonGroup > button.projectButtons,
+td > span.projectButtonGroup > a > button.projectButtons {
+    padding: 0 4px;
+    margin: 0px;
+    font-size: 9px;
+    border-radius: 17px;
+    display: block;
+    width: 66px;
+    font-weight: bold;
+    block-size: 14px;
+    letter-spacing: normal;
+    line-height: normal;
+}
+td > span.projectButtonGroup > button.projectButtons:first-child {
+    margin-bottom: 5px;
+}
