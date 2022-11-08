@@ -1778,6 +1778,6 @@ td > span.projectButtonGroup > a > button.projectButtons {
     letter-spacing: normal;
     line-height: normal;
 }
-td > span.projectButtonGroup > button.projectButtons:first-child {
+td > span.projectButtonGroup > a > button.projectButtons.liveButton {
     margin-bottom: 5px;
 }
